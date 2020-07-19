@@ -1,0 +1,3 @@
+CREATE SCHEMA `banking_app`;
+Hibernate: create table account (id integer not null auto_increment, acc_no bigint, amount integer, currency varchar(10), customer_id integer, type varchar(50), primary key (id)) engine=InnoDB
+Hibernate: create table customer (id integer not null auto_increment, address varchar(200), first_name varchar(50), last_name varchar(50), phone_number integer, ssn varchar(150), primary key (id)) engine=InnoDB
